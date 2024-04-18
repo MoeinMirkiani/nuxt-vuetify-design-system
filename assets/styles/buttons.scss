@@ -1,0 +1,61 @@
+.v-btn {
+  &--variant-outlined {
+    border-width: 2px !important;
+  }
+
+  &:hover {
+    & > .v-btn__overlay {
+      opacity: 0 !important;
+    }
+
+    &.v-btn--variant-flat {
+      .v-btn__content, .v-btn__prepend, .v-btn__append {
+        color: map-get($neutral, 'pure-white');
+      }
+
+      &.bg-primary {
+        background-color: map-get($primary, 'dark') !important;
+      }
+
+      &.bg-secondary {
+        background-color: map-get($secondary, 'dark') !important;
+      }
+    }
+
+    &.v-btn--variant-outlined {
+      &.text-primary {
+        background-color: map-get($primary, 'light') !important;
+      }
+
+      &.text-secondary {
+        background-color: map-get($secondary, 'light') !important;
+      }
+    }
+  }
+
+  &:active {
+    & > .v-btn__overlay {
+      opacity: 0 !important;
+    }
+
+    &.v-btn--variant-flat {
+      &.bg-primary {
+        box-shadow: 0 0 0 8px map-get($primary, 'light') !important;
+      }
+
+      &.bg-secondary {
+        box-shadow: 0 0 0 8px map-get($secondary, 'light') !important;
+      }
+    }
+
+    &.v-btn--variant-outlined {
+      &.text-primary {
+        box-shadow: 0 0 0 8px map-get($primary, 'light') !important;
+      }
+
+      &.text-secondary {
+        box-shadow: 0 0 0 8px map-get($secondary, 'light') !important;
+      }
+    }
+  }
+}

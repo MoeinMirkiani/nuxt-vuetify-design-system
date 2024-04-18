@@ -1,0 +1,4 @@
+@use "vuetify/settings" with (
+  $color-pack: false,
+  $button-border-radius: 10px
+);
